@@ -13,4 +13,6 @@ public class ProjectConstant {
 
 	public static String ENV = "";// 项目环境
 
+	public static String VERSION = "";// 项目版本
+
 }
