@@ -1,6 +1,7 @@
 package com.gxws.tool.common.data.dto;
 
 import java.io.Serializable;
+import java.util.Map;
 
 /**
  * base data transfer object 基础数据传输对象
@@ -15,24 +16,24 @@ public class BaseDto implements Serializable {
 
 	private static final long serialVersionUID = 7414747570827931208L;
 
-	private BaseRequestDto baseRequestDto;
+	private Map<String, String> requestMap;
 
-	private BaseResponseDto baseResponseDto;
+	private Map<String, String> responseMap;
 
-	public BaseRequestDto getBaseRequestDto() {
-		return baseRequestDto;
+	public Map<String, String> getRequestMap() {
+		return requestMap;
 	}
 
-	public void setBaseRequestDto(BaseRequestDto baseRequestDto) {
-		this.baseRequestDto = baseRequestDto;
+	public void setRequestMap(Map<String, String> requestMap) {
+		this.requestMap = requestMap;
 	}
 
-	public BaseResponseDto getBaseResponseDto() {
-		return baseResponseDto;
+	public Map<String, String> getResponseMap() {
+		return responseMap;
 	}
 
-	public void setBaseResponseDto(BaseResponseDto baseResponseDto) {
-		this.baseResponseDto = baseResponseDto;
+	public void setResponseMap(Map<String, String> responseMap) {
+		this.responseMap = responseMap;
 	}
 
 }
