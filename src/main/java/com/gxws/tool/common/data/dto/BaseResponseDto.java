@@ -12,14 +12,14 @@ import java.io.Serializable;
 public class BaseResponseDto implements Serializable {
 
 	private static final long serialVersionUID = 8100651540477131561L;
-	private String serviceRequest;
+	private String serviceRequestId;
 
-	public String getServiceRequest() {
-		return serviceRequest;
+	public String getServiceRequestId() {
+		return serviceRequestId;
 	}
 
-	public void setServiceRequest(String serviceRequest) {
-		this.serviceRequest = serviceRequest;
+	public void setServiceRequestId(String serviceRequestId) {
+		this.serviceRequestId = serviceRequestId;
 	}
 
 }
