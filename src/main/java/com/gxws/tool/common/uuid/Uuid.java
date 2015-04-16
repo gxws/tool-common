@@ -6,8 +6,8 @@ import java.util.UUID;
 /**
  * 生成uuid的类
  * 
- * @author 朱伟亮
- * @create 2015年2月27日下午3:08:32
+ * @author zhuwl120820@gxwsxx.com
+ *  2015年2月27日下午3:08:32
  *
  */
 public class Uuid {
@@ -15,8 +15,8 @@ public class Uuid {
 	/**
 	 * 随机uuid
 	 * 
-	 * @author 朱伟亮
-	 * @create 2015年2月27日下午3:30:46
+	 * @author zhuwl120820@gxwsxx.com
+	 *  2015年2月27日下午3:30:46
 	 * 
 	 * @return
 	 */
@@ -27,8 +27,8 @@ public class Uuid {
 	/**
 	 * 顺序uuid
 	 * 
-	 * @author 朱伟亮
-	 * @create 2015年2月27日下午3:31:35
+	 * @author zhuwl120820@gxwsxx.com
+	 *  2015年2月27日下午3:31:35
 	 * 
 	 * @return
 	 */
@@ -39,8 +39,8 @@ public class Uuid {
 	/**
 	 * 随机uuid带分隔符
 	 * 
-	 * @author 朱伟亮
-	 * @create 2015年2月27日下午3:31:48
+	 * @author zhuwl120820@gxwsxx.com
+	 *  2015年2月27日下午3:31:48
 	 * 
 	 * @param character
 	 * @return
@@ -59,8 +59,8 @@ public class Uuid {
 	/**
 	 * 顺序uuid带分隔符
 	 * 
-	 * @author 朱伟亮
-	 * @create 2015年2月27日下午3:31:57
+	 * @author zhuwl120820@gxwsxx.com
+	 *  2015年2月27日下午3:31:57
 	 * 
 	 * @param character
 	 * @return

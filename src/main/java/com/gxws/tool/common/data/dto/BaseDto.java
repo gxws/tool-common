@@ -8,8 +8,8 @@ import java.util.Map;
  * 
  * 用于远程调用数据传输对象都需要继承该类
  * 
- * @author 朱伟亮
- * @create 2015年3月6日上午11:30:37
+ * @author zhuwl120820@gxwsxx.com
+ *  2015年3月6日上午11:30:37
  *
  */
 public class BaseDto implements Serializable {

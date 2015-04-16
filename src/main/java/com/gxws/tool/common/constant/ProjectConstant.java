@@ -6,8 +6,8 @@ import java.util.Map;
 /**
  * 项目信息，属性值
  * 
- * @author 朱伟亮
- * @create 2015年2月27日下午5:33:56
+ * @author zhuwl120820@gxwsxx.com
+ *  2015年2月27日下午5:33:56
  *
  */
 public class ProjectConstant {
