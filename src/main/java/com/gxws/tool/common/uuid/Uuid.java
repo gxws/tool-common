@@ -6,8 +6,7 @@ import java.util.UUID;
 /**
  * 生成uuid的类
  * 
- * @author zhuwl120820@gxwsxx.com
- *  2015年2月27日下午3:08:32
+ * @author zhuwl120820@gxwsxx.com 2015年2月27日下午3:08:32
  *
  */
 public class Uuid {
@@ -15,10 +14,9 @@ public class Uuid {
 	/**
 	 * 随机uuid
 	 * 
-	 * @author zhuwl120820@gxwsxx.com
-	 *  2015年2月27日下午3:30:46
+	 * @author zhuwl120820@gxwsxx.com 2015年2月27日下午3:30:46
 	 * 
-	 * @return
+	 * @return 32位uuid
 	 */
 	public static String random() {
 		return randomSplit("");
@@ -27,10 +25,9 @@ public class Uuid {
 	/**
 	 * 顺序uuid
 	 * 
-	 * @author zhuwl120820@gxwsxx.com
-	 *  2015年2月27日下午3:31:35
+	 * @author zhuwl120820@gxwsxx.com 2015年2月27日下午3:31:35
 	 * 
-	 * @return
+	 * @return 32位uuid
 	 */
 	public static String order() {
 		return orderSplit("");
@@ -39,11 +36,11 @@ public class Uuid {
 	/**
 	 * 随机uuid带分隔符
 	 * 
-	 * @author zhuwl120820@gxwsxx.com
-	 *  2015年2月27日下午3:31:48
+	 * @author zhuwl120820@gxwsxx.com 2015年2月27日下午3:31:48
 	 * 
 	 * @param character
-	 * @return
+	 *            分隔符
+	 * @return 36位带分隔符的uuid
 	 */
 	public static String randomSplit(String character) {
 		String value = UUID.randomUUID().toString();
@@ -59,11 +56,11 @@ public class Uuid {
 	/**
 	 * 顺序uuid带分隔符
 	 * 
-	 * @author zhuwl120820@gxwsxx.com
-	 *  2015年2月27日下午3:31:57
+	 * @author zhuwl120820@gxwsxx.com 2015年2月27日下午3:31:57
 	 * 
 	 * @param character
-	 * @return
+	 *            分隔符
+	 * @return 36位带分隔符的uuid
 	 */
 	public static String orderSplit(String character) {
 		String value = new StringBuffer(36).append(format(getIP()))
