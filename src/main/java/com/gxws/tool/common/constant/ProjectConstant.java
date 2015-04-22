@@ -6,21 +6,30 @@ import java.util.Map;
 /**
  * 项目信息，属性值
  * 
- * @author zhuwl120820@gxwsxx.com
- *  2015年2月27日下午5:33:56
+ * @author zhuwl120820@gxwsxx.com 2015年2月27日下午5:33:56
  *
  */
 public class ProjectConstant {
 
-	public static String VALUE_PROJECT_NAME = "";// 项目名
+	private String name;
 
-	public static String VALUE_PROJECT_ENV = "";// 项目环境
+	private String env = "env_default";
 
-	public static String VALUE_PROJECT_VERSION = "";// 项目版本
+	private String version;
 
-	public static String VALUE_PROJECT_IP = "";// 项目运行网卡IP地址
+	private String ip;
 
-	public static String VALUE_PROJECT_PORT = "";// 项目运行实例端口号
+	private String port = "port_default";
+
+	// public static String VALUE_PROJECT_NAME = "";// 项目名
+	//
+	// public static String VALUE_PROJECT_ENV = "";// 项目环境
+	//
+	// public static String VALUE_PROJECT_VERSION = "";// 项目版本
+	//
+	// public static String VALUE_PROJECT_IP = "";// 项目运行网卡IP地址
+	//
+	// public static String VALUE_PROJECT_PORT = "";// 项目运行实例端口号
 
 	public static final String NAME_PROJECT_NAME = "project.name";
 
@@ -32,22 +41,84 @@ public class ProjectConstant {
 
 	public static final String NAME_PROJECT_PORT = "project.port";
 
-	public static Map<String, String> map = new HashMap<>();
+	private Map<String, String> map = new HashMap<>();
+
+	private static ProjectConstant self;
+
+	private ProjectConstant() {
+
+	}
+
+	public static ProjectConstant instance() {
+		if (null == self) {
+			self = new ProjectConstant();
+		}
+		return self;
+	}
 
 	public static void put(String key, String value) {
-		map.put(key, value);
+		self.map.put(key, value);
 	}
 
 	public static String get(String key) {
-		return map.get(key);
+		return self.map.get(key);
 	}
 
-	public static void putAll(Map<String, String> m) {
-		map.putAll(m);
-	}
+	// public void putAll(Map<String, String> m) {
+	// map.putAll(m);
+	// }
 
-	public static Map<String, String> getAll() {
+	public Map<String, String> getAll() {
 		return map;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+		map.put(NAME_PROJECT_NAME, this.name);
+	}
+
+	public String getEnv() {
+		return env;
+	}
+
+	public void setEnv(String env) {
+		if (null != env && !"".equals(env)) {
+			this.env = env;
+		}
+		map.put(NAME_PROJECT_ENV, this.env);
+	}
+
+	public String getVersion() {
+		return version;
+	}
+
+	public void setVersion(String version) {
+		this.version = version;
+		map.put(NAME_PROJECT_VERSION, this.version);
+	}
+
+	public String getIp() {
+		return ip;
+	}
+
+	public void setIp(String ip) {
+		this.ip = ip;
+		map.put(NAME_PROJECT_IP, this.ip);
+	}
+
+	public String getPort() {
+		return port;
+	}
+
+	public void setPort(String port) {
+		if (null != port && !"".equals(port)) {
+			this.port = port;
+		}
+		map.put(NAME_PROJECT_PORT, this.port);
 	}
 
 }
