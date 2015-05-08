@@ -7,7 +7,9 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * 项目信息，属性值
+ * 项目信息，属性值<br>
+ * 以单例方式读取<br>
+ * 读取项目名：ProjectConstant.instance().getName();
  * 
  * @author zhuwl120820@gxwsxx.com 2015年2月27日下午5:33:56
  *
