@@ -1,7 +1,10 @@
 package com.gxws.tool.common.constant;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * 项目信息，属性值
@@ -10,6 +13,14 @@ import java.util.Map;
  *
  */
 public class ProjectConstant {
+
+	/**
+	 * 线上环境定义。env的值等于set内的其中一项时，将启用以下功能：<br>
+	 * 远程配置读取功能，项目tool-link-properties。<br>
+	 * 远程日志存储功能，项目tool-logging。<br>
+	 */
+	public final static Set<String> onlineEnvSet = new HashSet<String>(
+			Arrays.asList(new String[] { "dev", "test", "real" }));
 
 	private String name;
 
