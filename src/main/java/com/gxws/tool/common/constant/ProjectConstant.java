@@ -22,25 +22,25 @@ public class ProjectConstant {
 	public final static Set<String> onlineEnvSet = new HashSet<String>(
 			Arrays.asList(new String[] { "dev", "test", "real" }));
 
-	private String name;
+	private String name;// 项目名
 
-	private String env = "env_default";
+	private String env = "env_default";// 项目环境
 
-	private String version;
+	private String version;// 项目版本
 
-	private String ip;
+	private String ip;// 项目运行网卡IP地址
 
-	private String port = "port_default";
+	private String port = "port_default";// 项目运行实例端口号
 
-	// public static String VALUE_PROJECT_NAME = "";// 项目名
+	// public static String VALUE_PROJECT_NAME = "";
 	//
-	// public static String VALUE_PROJECT_ENV = "";// 项目环境
+	// public static String VALUE_PROJECT_ENV = "";
 	//
-	// public static String VALUE_PROJECT_VERSION = "";// 项目版本
+	// public static String VALUE_PROJECT_VERSION = "";
 	//
-	// public static String VALUE_PROJECT_IP = "";// 项目运行网卡IP地址
+	// public static String VALUE_PROJECT_IP = "";
 	//
-	// public static String VALUE_PROJECT_PORT = "";// 项目运行实例端口号
+	// public static String VALUE_PROJECT_PORT = "";
 
 	public static final String NAME_PROJECT_NAME = "project.name";
 
