@@ -24,25 +24,15 @@ public class ProjectConstant {
 	public final static Set<String> onlineEnvSet = new HashSet<String>(
 			Arrays.asList(new String[] { "dev", "test", "real" }));
 
-	private String name;// 项目名
+	private String name = "name_default";// 项目名
 
 	private String env = "env_default";// 项目环境
 
-	private String version;// 项目版本
+	private String version = "version_default";// 项目版本
 
-	private String ip;// 项目运行网卡IP地址
+	private String ip = "ip_default";// 项目运行网卡IP地址
 
 	private String port = "port_default";// 项目运行实例端口号
-
-	// public static String VALUE_PROJECT_NAME = "";
-	//
-	// public static String VALUE_PROJECT_ENV = "";
-	//
-	// public static String VALUE_PROJECT_VERSION = "";
-	//
-	// public static String VALUE_PROJECT_IP = "";
-	//
-	// public static String VALUE_PROJECT_PORT = "";
 
 	public static final String NAME_PROJECT_NAME = "project.name";
 
@@ -77,10 +67,6 @@ public class ProjectConstant {
 		return self.map.get(key);
 	}
 
-	// public void putAll(Map<String, String> m) {
-	// map.putAll(m);
-	// }
-
 	public Map<String, String> getAll() {
 		return map;
 	}
@@ -90,7 +76,9 @@ public class ProjectConstant {
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		if (null != name && !"".equals(name)) {
+			this.name = name;
+		}
 		map.put(NAME_PROJECT_NAME, this.name);
 	}
 
@@ -110,7 +98,9 @@ public class ProjectConstant {
 	}
 
 	public void setVersion(String version) {
-		this.version = version;
+		if (null != version && !"".equals(version)) {
+			this.version = version;
+		}
 		map.put(NAME_PROJECT_VERSION, this.version);
 	}
 
@@ -119,7 +109,9 @@ public class ProjectConstant {
 	}
 
 	public void setIp(String ip) {
-		this.ip = ip;
+		if (null != ip && !"".equals(ip)) {
+			this.ip = ip;
+		}
 		map.put(NAME_PROJECT_IP, this.ip);
 	}
 

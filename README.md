@@ -11,6 +11,7 @@ tool-common
 #### 新功能：
 修改ProjectConstant，将静态变量改为单例对象，并修改了变量名获取方式。<br>
 添加onlineEnvSet，值为[{ "dev", "test", "real" }]。<br>
+添加全部全局变量的默认值。<br>
 
 #### 修复：
  无
