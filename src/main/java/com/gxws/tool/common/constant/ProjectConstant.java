@@ -34,6 +34,8 @@ public class ProjectConstant {
 
 	private String port = "port_default";// 项目运行实例端口号
 
+	private String contextPath = "contextPath_default";// 项目的contextPath
+
 	public static final String NAME_PROJECT_NAME = "project.name";
 
 	public static final String NAME_PROJECT_ENV = "project.env";
@@ -43,6 +45,8 @@ public class ProjectConstant {
 	public static final String NAME_PROJECT_IP = "project.ip";
 
 	public static final String NAME_PROJECT_PORT = "project.port";
+
+	public static final String NAME_PROJECT_CONTEXT_PATH = "project.context.path";
 
 	private Map<String, String> map = new HashMap<>();
 
@@ -124,6 +128,17 @@ public class ProjectConstant {
 			this.port = port;
 		}
 		map.put(NAME_PROJECT_PORT, this.port);
+	}
+
+	public String getContextPath() {
+		return contextPath;
+	}
+
+	public void setContextPath(String contextPath) {
+		if (null != contextPath && !"".equals(contextPath)) {
+			this.contextPath = contextPath;
+		}
+		map.put(NAME_PROJECT_CONTEXT_PATH, this.contextPath);
 	}
 
 }

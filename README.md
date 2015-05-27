@@ -15,6 +15,15 @@ tool-common
 
 #### 修复：
  无
+ 
+## 1.1
+### 1.1.0
+#### 新功能：
+添加了servlet context path的值到ProjectConstant。<br>
+去除了parent依赖，将所有的配置都复制到项目的pom.xml。<br>
+
+#### 修复：
+ 无
 
 ### 包
 #### com.gxws.tool.common.constant 
