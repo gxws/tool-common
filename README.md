@@ -13,6 +13,8 @@ tool-common
 ### 1.1.0
 添加了servlet context path的值到ProjectConstant。<br>
 去除了parent依赖，将所有的配置都复制到项目的pom.xml。<br>
+
+### 1.2.0
 修改了readme.md的说明格式。<br>
 
 ### 包
