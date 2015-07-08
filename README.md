@@ -16,6 +16,7 @@ tool-common
 
 ### 1.2.0
 修改了readme.md的说明格式。<br>
+添加了BaseException异常基类。<br>
 
 ### 包
 #### com.gxws.tool.common.constant 
