@@ -24,7 +24,7 @@ public class BaseDto implements Serializable {
 	private Map<String, String> responseMap;
 
 	// 远程调用是否异常
-	private boolean hasException;
+	private boolean hasException = false;
 
 	// 异常对象
 	private BaseException exception;
@@ -45,12 +45,8 @@ public class BaseDto implements Serializable {
 		this.responseMap = responseMap;
 	}
 
-	public boolean isHasException() {
+	public boolean hasException() {
 		return hasException;
-	}
-
-	public void setHasException(boolean hasException) {
-		this.hasException = hasException;
 	}
 
 	public BaseException getException() {
@@ -58,6 +54,7 @@ public class BaseDto implements Serializable {
 	}
 
 	public void setException(BaseException exception) {
+		this.hasException = true;
 		this.exception = exception;
 	}
 
