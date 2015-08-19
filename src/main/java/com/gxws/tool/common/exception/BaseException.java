@@ -7,6 +7,7 @@ package com.gxws.tool.common.exception;
  * @since 1.2
  */
 public class BaseException extends Exception {
+	private static final long serialVersionUID = 4399238246364390381L;
 	private String id = "";
 	private String code = "";
 	private String value = "";
@@ -14,6 +15,29 @@ public class BaseException extends Exception {
 	private String type = "";
 	private String msg = "";
 	private String reason = "";
+
+	/**
+	 * 覆盖Exception中的getMessage方法，返回或获取异常对象的提示信息
+	 * 
+	 * @see java.lang.Throwable#getMessage()
+	 * @since 1.3
+	 */
+	@Override
+	public String getMessage() {
+		return this.getMsg();
+	}
+
+	/**
+	 * 添加需要调试的异常提示信息
+	 * 
+	 * @author zhuwl120820@gxwsxx.com
+	 * @param msg
+	 *            提示信息
+	 * @since 1.3
+	 */
+	public void appendMsg(String msg) {
+		this.setMsg(this.getMsg() + "。" + msg);
+	}
 
 	public String getId() {
 		return id;

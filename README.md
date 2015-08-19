@@ -18,6 +18,10 @@ tool-common
 修改了readme.md的说明格式。<br>
 添加了BaseException异常基类。<br>
 
+### 1.3.0
+修改BaseException，覆盖Exception中的getMessage方法，返回或获取异常对象的提示信息。<br>
+添加BaseException中的方法，添加需要调试的异常提示信息。<br>
+
 ### 包
 #### com.gxws.tool.common.constant 
 全局变量
